@@ -951,6 +951,8 @@ function system_install_apply_profile_themes($profile_info) {
   theme_enable(array($admin_theme));
   config_set('system.core', 'admin_theme', $admin_theme);
   config_set('system.core', 'node_admin_theme', '1');
+
+  backdrop_flush_all_caches();
 }
 
 /**
