@@ -15,10 +15,10 @@
  * See the documentation at https://docs.backdropcms.org/database-configuration
  */
 $database = array(
-  'database' => 'backdrop-pull5327',
-  'username' => 'root',
-  'password' => '',
-  'host' => '127.0.0.1',
+  'database' => 'database_name',
+  'username' => 'user',
+  'password' => 'pass',
+  'host' => 'localhost',
 );
 
 /**
