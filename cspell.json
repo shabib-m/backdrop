@@ -3,6 +3,7 @@
     "nosniff",
     "accum",
     "groupwise",
-    "myusername"  
+    "myusername",
+    "maxlifetime"  
   ]
 }
