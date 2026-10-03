@@ -402,7 +402,7 @@ function standard_install() {
   // Assign the "Administrator" role to user 1, and make sure that generation of
   // automatic path alias is enabled.
   $admin_user = user_load(1);
-  $admin_user->roles[] = $admin_role->name;
+  $admin_user->roles[] = 'administrator';
   $admin_user->path['auto'] = TRUE;
   user_save($admin_user);
 
