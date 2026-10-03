@@ -123,15 +123,6 @@
         "access administration bar",
         "administer languages",
         "translate interface",
-        "administer unit tests",
-        "administer google image sitemap",
-        "create mhmh content",
-        "edit own mhmh content",
-        "edit any mhmh content",
-        "delete own mhmh content",
-        "delete any mhmh content",
-        "administer task manager",
-        "administer task manager notifications",
-        "receive task notifications"
+        "administer unit tests"
     ]
 }
