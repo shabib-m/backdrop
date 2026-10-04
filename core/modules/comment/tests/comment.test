@@ -562,7 +562,7 @@ class CommentInterfaceTest extends CommentHelperCase {
     // node.
     $this->backdropLogin($this->admin_user);
     $this->node = $this->backdropCreateNode(array('type' => 'post', 'promote' => 1, 'comment' => COMMENT_NODE_OPEN));
-	$this->verbose('Node NID: ' . $this->node->nid);
+  	$this->verbose('Node NID: ' . $this->node->nid);
     $this->backdropGet('node');
     $this->assertNoLink(t('@count comments', array('@count' => 0)));
     $this->assertNoLink(t('@count new comments', array('@count' => 0)));
