@@ -58,8 +58,8 @@ $database = array(
  * $config_directories['staging'] = '/home/myusername/config/staging';
  * @endcode
  */
-$config_directories['active'] = './files/config_8faa81a751331792e4c760fe3132e38e/active';
-$config_directories['staging'] = './files/config_8faa81a751331792e4c760fe3132e38e/staging';
+$config_directories['active'] = 'files/config_' . md5(serialize($database)) . '/active';
+$config_directories['staging'] = 'files/config_' . md5(serialize($database)) . '/staging';
 
 /**
  * Skip the configuration staging directory cleanup
@@ -113,7 +113,7 @@ $settings['restore_free_access'] = FALSE;
  * This can also be set to a value of FALSE to disable the backup capability,
  * for sites that have an alternative backup mechanism in place.
  */
-$settings['backup_directory'] = 'files/backups_3233972ac19b91f88674558f0dcd6548';
+$settings['backup_directory'] = '';
 
 /**
  * Salt for one-time login links and cancel links, form tokens, etc.
@@ -133,7 +133,7 @@ $settings['backup_directory'] = 'files/backups_3233972ac19b91f88674558f0dcd6548'
  * $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'VFGZAVUXuhHKSzqhb8tBvKJdKlg4r5rHXVtuQhcsbsw';
+$settings['hash_salt'] = '';
 
 /**
  * Trusted host configuration (optional but highly recommended).
