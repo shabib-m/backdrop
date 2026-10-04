@@ -158,7 +158,7 @@ class CommentHelperCase extends BackdropWebTestCase {
    * @param boolean $skip_approval
    *   Whether anonymous comments can be posted without approval.
    */
-  function allowAnonymousComments($skip_approval = TRUE) {
+  protected function allowAnonymousComments($skip_approval = TRUE) {
     user_role_change_permissions(BACKDROP_ANONYMOUS_ROLE, array(
       'access comments' => TRUE,
       'post comments' => TRUE,
